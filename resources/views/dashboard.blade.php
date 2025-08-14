@@ -252,14 +252,16 @@
         <div class="info-label">
           📧 Email
         </div>
-        <div class="info-value">{{ Auth::user()->email }}</div>
+        <div class="info-value">{{ Auth::user()->username }}</div>
       </div>
 
       <div class="info-item">
         <div class="info-label">
           📅 Bergabung sejak
         </div>
-        <div class="info-value">{{ Auth::user()->created_at->format('d M Y') }}</div>
+        <div class="info-value">
+          {{ Auth::user()->created_at ? Auth::user()->created_at->format('d M Y') : now()->format('d M Y') }}
+        </div>
       </div>
     </div>
 

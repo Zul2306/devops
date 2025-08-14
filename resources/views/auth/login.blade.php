@@ -354,7 +354,7 @@
 
       <div class="form-group">
         <i>📧</i>
-        <input type="email" name="email" placeholder="Enter your email address" required>
+        <input type="text" name="username" placeholder="Enter your email address" required>
       </div>
 
       <div class="form-group">
