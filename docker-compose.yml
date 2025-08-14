@@ -16,7 +16,7 @@ services:
 
   db:
     image: postgres:15
-    container_name: postgres_db
+    container_name: postgres_db_new
     environment:
       POSTGRES_DB: kelompok8
       POSTGRES_USER: postgres
